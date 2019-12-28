@@ -71,6 +71,8 @@ console.log(auto_2.info());
 // let B = class B {}
 
 
+
+// METHOD CHAINING
 // declaro una clase
 class User {
   constructor(name, email, status) {
@@ -101,3 +103,5 @@ class User {
 // creo una instancia de clase
 let user1 = new User('ricardo', 'ricardo@mail.com');
 console.log(user1.login().logout());
+
+
