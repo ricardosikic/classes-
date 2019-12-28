@@ -1,3 +1,63 @@
+// las clases son funciones especiales, que permiten optimizar la escritura de codigo.
+// las clases son usualmente utilizadas cuando debo crear, muchos objetos que comparten mismos atributos y metodos.
+
+
+// las clases utilizan el metodo constructor que se encarga de crear las nuevas instancias de la clase
+
+class Rectangulo {
+  constructor(alto, ancho) {
+    this.alto = alto;
+    this.ancho = ancho;
+    this.num_rectangulos = 0;
+  }
+
+  calculaArea() {
+    this.num_rectangulos++;
+    console.log(`el area es ${this.alto * this.ancho}`);
+  }
+}
+
+// mediante la palabra clave new
+// creo un objeto
+let rectangulo_1 = new Rectangulo(14, 20);
+console.log(rectangulo_1.calculaArea());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // las clases son funciones especiales
 
 // declaro una clase
