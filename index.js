@@ -71,16 +71,6 @@ console.log(auto_2.info());
 // let B = class B {}
 
 
-
-
-
-
-
-
-
-
-
-
 // declaro una clase
 class User {
   constructor(name, email, status) {
