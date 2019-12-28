@@ -105,3 +105,40 @@ let user1 = new User('ricardo', 'ricardo@mail.com');
 console.log(user1.login().logout());
 
 
+class Player {
+  constructor(name, power) {
+    this.name = name;
+    this.power = power;
+    this.score = 0;
+  }
+
+  createPlayer() {
+    this.score++;
+    console.log(`Welcome ${this.name} your power is ${this.power}, you won ${this.score}`);
+    return this;
+  }
+  
+  openBox() {
+    let powers = ['fire', 'wind', 'earth'];
+    let item = powers[Math.floor(Math.random() * powers.length)];
+     switch(item) {
+        case 'fire':
+        console.log(`item selected ${item}, you won ${this.score + 4}`);
+        break;
+
+        case 'wind':
+        console.log(`item selected ${item}, you won ${this.score + 3}`);
+        break;
+
+        case 'earth':
+        console.log(`item selected ${item}, you won ${this.score + 7}`);
+        break;
+      }
+    return this;
+  }
+
+  
+}
+
+let player_1 = new Player('ricardo', 'ice');
+console.log(player_1.createPlayer().openBox());
